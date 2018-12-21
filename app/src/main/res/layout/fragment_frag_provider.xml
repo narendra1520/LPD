@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.narendra.lpd.frag_provider">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/ic_menu_camera"
+                    app:civ_border_color="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_pro"
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Contact"
+                    app:met_floatingLabel="highlight"
+                    android:inputType="number"
+                    app:met_maxCharacters="10"
+                    android:drawableLeft="@drawable/req_cont"
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_email"
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="2">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edpin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_zip"
+                    android:drawablePadding="5dp"
+                    app:met_maxCharacters="6"
+                    android:layout_marginRight="5dp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edbdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Birth Date"
+                    android:inputType="date"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_date"
+                    android:drawablePadding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edlicense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="License No"
+                    app:met_maxCharacters="15"
+                    android:inputType="textPersonName"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_lice"
+                    android:drawablePadding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="1">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Least Price For Delivery"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_price"
+                    android:drawablePadding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_pass"
+                    android:drawablePadding="5dp"
+                    app:met_minCharacters="8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <CheckBox
+                    android:id="@+id/showpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Show Password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="Register"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.narendra.lpd.Track_package"
+    android:background="@drawable/splash"
+    android:backgroundTint="@color/tint"
+    android:backgroundTintMode="src_atop">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtdisttrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Distance"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/txttimetrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical" />
+    <ImageButton
+        android:id="@+id/btnrefreshtrack"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/refresh"/>
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_track"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</LinearLayout>

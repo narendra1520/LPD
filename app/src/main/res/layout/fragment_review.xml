@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.narendra.lpd.Review">
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write a Review"
+            android:maxLength="150"
+            android:inputType="textMultiLine"
+            app:met_floatingLabel="highlight"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/review"
+            app:met_maxCharacters="150"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+    <Button
+        android:id="@+id/btnreview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

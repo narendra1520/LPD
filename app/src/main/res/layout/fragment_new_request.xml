@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.narendra.lpd.NewRequest"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edsource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Source Address"
+                    android:inputType="text"
+                    app:met_floatingLabel="highlight"
+                    app:met_singleLineEllipsis="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/req_source"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="2dp"
+                    android:text="TO" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/eddesti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Destination Address"
+                    android:inputType="text"
+                    app:met_floatingLabel="highlight"
+                    app:met_singleLineEllipsis="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/req_desti"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnsrc"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/source"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="7dp"/>
+
+                <ImageButton
+                    android:id="@+id/btndesti"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/desti" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edsender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Sender Name"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/req_sender"
+                app:met_floatingLabel="highlight"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edreciever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Reciever Name"
+                app:met_floatingLabel="highlight"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/req_recie"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edreccon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Contact"
+                app:met_floatingLabel="highlight"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/req_cont"
+                app:met_maxCharacters="10"/>
+
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Main Category:"
+                android:paddingRight="6dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <Spinner
+                android:id="@+id/maincate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:text="Sub Category:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <Spinner
+                android:id="@+id/subcate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

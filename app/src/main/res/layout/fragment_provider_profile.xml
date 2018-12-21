@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.narendra.lpd.Provider_profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/pbtnedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:clickable="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pbtnpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:text="Change Password"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pprofile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/ic_menu_camera"
+                    app:civ_border_color="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ptxtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="e@example.com"
+                    android:ems="10"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:drawableTop="@drawable/pro_email"
+                    android:drawablePadding="3dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="11dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/pedbdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Birth Date"
+                    android:drawableTop="@drawable/pro_date"
+                    android:drawablePadding="5dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="11dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/pedlic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint="License No"
+                    android:inputType="none"
+                    android:drawableTop="@drawable/pro_lice"
+                    android:drawablePadding="5dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pedname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_pro"
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pedcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Contact"
+                    app:met_floatingLabel="highlight"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/req_cont"
+                    android:drawablePadding="5dp"
+                    app:met_maxCharacters="10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pedpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_zip"
+                    android:drawablePadding="5dp"
+                    app:met_maxCharacters="6"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pedprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Least Price For Delivery"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight"
+                    android:drawableLeft="@drawable/pro_price"
+                    android:drawablePadding="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/layybtn">
+                <Button
+                    android:id="@+id/pbtnup"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="UPDATE"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:clickable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

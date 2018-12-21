@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav1_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav1_new_request"
+            android:icon="@drawable/newrequest"
+            android:title="New Request"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav1_request"
+            android:icon="@drawable/requests"
+            android:title="Requests" />
+        <item
+            android:id="@+id/nav1_history"
+            android:icon="@drawable/history"
+            android:title="History" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav1_Logout_menu"
+            android:title="Logout"
+            android:icon="@drawable/logout" />
+    </group>
+</menu>
